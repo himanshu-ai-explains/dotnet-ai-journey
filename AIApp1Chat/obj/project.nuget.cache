@@ -1,0 +1,31 @@
+{
+  "version": 2,
+  "dgSpecHash": "A2GnnBx4UXU=",
+  "success": true,
+  "projectFilePath": "E:\\projects\\AI\\.NetAI\\repo\\AIApp1Chat\\AIApp1Chat.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Himanshu\\.nuget\\packages\\microsoft.extensions.configuration\\10.0.8\\microsoft.extensions.configuration.10.0.8.nupkg.sha512",
+    "C:\\Users\\Himanshu\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\10.0.8\\microsoft.extensions.configuration.abstractions.10.0.8.nupkg.sha512",
+    "C:\\Users\\Himanshu\\.nuget\\packages\\microsoft.extensions.configuration.fileextensions\\10.0.8\\microsoft.extensions.configuration.fileextensions.10.0.8.nupkg.sha512",
+    "C:\\Users\\Himanshu\\.nuget\\packages\\microsoft.extensions.configuration.json\\10.0.8\\microsoft.extensions.configuration.json.10.0.8.nupkg.sha512",
+    "C:\\Users\\Himanshu\\.nuget\\packages\\microsoft.extensions.configuration.usersecrets\\10.0.8\\microsoft.extensions.configuration.usersecrets.10.0.8.nupkg.sha512",
+    "C:\\Users\\Himanshu\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.3\\microsoft.extensions.dependencyinjection.abstractions.10.0.3.nupkg.sha512",
+    "C:\\Users\\Himanshu\\.nuget\\packages\\microsoft.extensions.diagnostics.abstractions\\10.0.3\\microsoft.extensions.diagnostics.abstractions.10.0.3.nupkg.sha512",
+    "C:\\Users\\Himanshu\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\10.0.8\\microsoft.extensions.fileproviders.abstractions.10.0.8.nupkg.sha512",
+    "C:\\Users\\Himanshu\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\10.0.8\\microsoft.extensions.fileproviders.physical.10.0.8.nupkg.sha512",
+    "C:\\Users\\Himanshu\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\10.0.8\\microsoft.extensions.filesystemglobbing.10.0.8.nupkg.sha512",
+    "C:\\Users\\Himanshu\\.nuget\\packages\\microsoft.extensions.hosting.abstractions\\10.0.3\\microsoft.extensions.hosting.abstractions.10.0.3.nupkg.sha512",
+    "C:\\Users\\Himanshu\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\10.0.3\\microsoft.extensions.logging.abstractions.10.0.3.nupkg.sha512",
+    "C:\\Users\\Himanshu\\.nuget\\packages\\microsoft.extensions.options\\10.0.3\\microsoft.extensions.options.10.0.3.nupkg.sha512",
+    "C:\\Users\\Himanshu\\.nuget\\packages\\microsoft.extensions.primitives\\10.0.8\\microsoft.extensions.primitives.10.0.8.nupkg.sha512",
+    "C:\\Users\\Himanshu\\.nuget\\packages\\openai\\2.10.0\\openai.2.10.0.nupkg.sha512",
+    "C:\\Users\\Himanshu\\.nuget\\packages\\system.clientmodel\\1.10.0\\system.clientmodel.1.10.0.nupkg.sha512",
+    "C:\\Users\\Himanshu\\.nuget\\packages\\system.diagnostics.diagnosticsource\\10.0.3\\system.diagnostics.diagnosticsource.10.0.3.nupkg.sha512",
+    "C:\\Users\\Himanshu\\.nuget\\packages\\system.io.pipelines\\10.0.8\\system.io.pipelines.10.0.8.nupkg.sha512",
+    "C:\\Users\\Himanshu\\.nuget\\packages\\system.memory.data\\10.0.3\\system.memory.data.10.0.3.nupkg.sha512",
+    "C:\\Users\\Himanshu\\.nuget\\packages\\system.net.serversentevents\\10.0.2\\system.net.serversentevents.10.0.2.nupkg.sha512",
+    "C:\\Users\\Himanshu\\.nuget\\packages\\system.text.encodings.web\\10.0.8\\system.text.encodings.web.10.0.8.nupkg.sha512",
+    "C:\\Users\\Himanshu\\.nuget\\packages\\system.text.json\\10.0.8\\system.text.json.10.0.8.nupkg.sha512"
+  ],
+  "logs": []
+}
