@@ -5,6 +5,18 @@
     "version": "1.0"
   },
   "paths": {
+    "/": {
+      "get": {
+        "tags": [
+          "AIApp3SemanticKernel"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Chat": {
       "post": {
         "tags": [

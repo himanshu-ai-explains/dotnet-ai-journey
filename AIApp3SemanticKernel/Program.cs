@@ -1,5 +1,6 @@
 using Microsoft.SemanticKernel;
 using AIApp3SemanticKernel.Services;
+using Microsoft.AspNetCore.RateLimiting;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -20,6 +21,15 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddRateLimiter(options =>
+{
+    options.AddFixedWindowLimiter("basic", opt =>
+    {
+        opt.PermitLimit = 4;
+        opt.Window = TimeSpan.FromMinutes(1);
+    });
+});
 
 builder.Services.AddCors(options =>
 {
@@ -43,6 +53,7 @@ app.UseSwaggerUI(c =>
 app.MapGet("/", () => Results.Redirect("/swagger"));
 
 app.UseSwaggerUI();
+app.UseRateLimiter();
     app.UseCors();
 
 
