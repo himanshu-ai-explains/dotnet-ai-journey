@@ -13,7 +13,7 @@ using System.Reflection;
 
 [assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("15f5ffea-42b6-4f18-9f92-7d632b001a75")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("AIApp3SemanticKernel")]
-[assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+[assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+776ef24b3dc00b89e9c47a695602acfcd1a1f83a")]
 [assembly: System.Reflection.AssemblyProductAttribute("AIApp3SemanticKernel")]

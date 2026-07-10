@@ -33,12 +33,18 @@ builder.Services.AddCors(options =>
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
+
     app.UseSwagger();
-    app.UseSwaggerUI();
+app.UseSwaggerUI(c =>
+{
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "AI Chat API V1");
+    c.RoutePrefix = "swagger"; // Access at /swagger
+});
+app.MapGet("/", () => Results.Redirect("/swagger"));
+
+app.UseSwaggerUI();
     app.UseCors();
-}
+
 
 app.UseHttpsRedirection();
 
