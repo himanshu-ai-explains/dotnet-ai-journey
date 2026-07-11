@@ -37,3 +37,4 @@ E:\projects\AI\.NetAI\repo\AIApp1Chat\obj\Debug\net8.0\refint\AIApp1Chat.dll
 E:\projects\AI\.NetAI\repo\AIApp1Chat\obj\Debug\net8.0\AIApp1Chat.pdb
 E:\projects\AI\.NetAI\repo\AIApp1Chat\obj\Debug\net8.0\AIApp1Chat.genruntimeconfig.cache
 E:\projects\AI\.NetAI\repo\AIApp1Chat\obj\Debug\net8.0\ref\AIApp1Chat.dll
+E:\projects\AI\.NetAI\repo\AIApp1Chat\obj\Debug\net8.0\AIApp1Chat.sourcelink.json

@@ -23,12 +23,12 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AIApp1Chat",
+              "Title": "AIApp1Chat.csproj",
               "DocumentMoniker": "E:\\projects\\AI\\.NetAI\\repo\\AIApp1Chat\\AIApp1Chat.csproj",
               "RelativeDocumentMoniker": "AIApp1Chat.csproj",
               "ToolTip": "E:\\projects\\AI\\.NetAI\\repo\\AIApp1Chat\\AIApp1Chat.csproj",
               "RelativeToolTip": "AIApp1Chat.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA3AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2026-05-26T08:56:18.319Z",
               "EditorCaption": ""
@@ -41,7 +41,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "E:\\projects\\AI\\.NetAI\\repo\\AIApp1Chat\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAACIAAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAABTAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-26T08:21:55.313Z",
               "EditorCaption": ""

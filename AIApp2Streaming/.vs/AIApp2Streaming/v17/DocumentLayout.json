@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "E:\\projects\\AI\\.NetAI\\repo\\AIApp2Streaming\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3E444760-4233-86DB-6EBB-A9628101EBA5}|AIApp2Streaming.csproj|e:\\projects\\ai\\.netai\\repo\\aiapp2streaming\\aiapp2streaming.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{3E444760-4233-86DB-6EBB-A9628101EBA5}|AIApp2Streaming.csproj|solutionrelative:aiapp2streaming.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3E444760-4233-86DB-6EBB-A9628101EBA5}|AIApp2Streaming.csproj|e:\\projects\\ai\\.netai\\repo\\aiapp2streaming\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3E444760-4233-86DB-6EBB-A9628101EBA5}|AIApp2Streaming.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -19,6 +23,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "AIApp2Streaming",
+              "DocumentMoniker": "E:\\projects\\AI\\.NetAI\\repo\\AIApp2Streaming\\AIApp2Streaming.csproj",
+              "RelativeDocumentMoniker": "AIApp2Streaming.csproj",
+              "ToolTip": "E:\\projects\\AI\\.NetAI\\repo\\AIApp2Streaming\\AIApp2Streaming.csproj",
+              "RelativeToolTip": "AIApp2Streaming.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-07-07T16:41:06.429Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\projects\\AI\\.NetAI\\repo\\AIApp2Streaming\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
