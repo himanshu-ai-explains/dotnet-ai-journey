@@ -9,7 +9,7 @@
       "AIApp2Streaming/1.0.0": {
         "dependencies": {
           "Microsoft.Extensions.Configuration.UserSecrets": "10.0.8",
-          "OpenAI": "2.11.0"
+          "OpenAI": "2.12.0"
         },
         "runtime": {
           "AIApp2Streaming.dll": {}
@@ -182,19 +182,19 @@
           }
         }
       },
-      "OpenAI/2.11.0": {
+      "OpenAI/2.12.0": {
         "dependencies": {
-          "System.ClientModel": "1.10.0",
+          "System.ClientModel": "1.14.0",
           "System.Net.ServerSentEvents": "10.0.2"
         },
         "runtime": {
           "lib/net8.0/OpenAI.dll": {
-            "assemblyVersion": "2.11.0.0",
-            "fileVersion": "2.11.0.0"
+            "assemblyVersion": "2.12.0.0",
+            "fileVersion": "2.12.0.0"
           }
         }
       },
-      "System.ClientModel/1.10.0": {
+      "System.ClientModel/1.14.0": {
         "dependencies": {
           "Microsoft.Extensions.Configuration.Abstractions": "10.0.8",
           "Microsoft.Extensions.Hosting.Abstractions": "10.0.3",
@@ -205,8 +205,8 @@
         },
         "runtime": {
           "lib/net8.0/System.ClientModel.dll": {
-            "assemblyVersion": "1.10.0.0",
-            "fileVersion": "1.1000.26.16607"
+            "assemblyVersion": "1.14.0.0",
+            "fileVersion": "1.1400.26.30307"
           }
         }
       },
@@ -379,19 +379,19 @@
       "path": "microsoft.extensions.primitives/10.0.8",
       "hashPath": "microsoft.extensions.primitives.10.0.8.nupkg.sha512"
     },
-    "OpenAI/2.11.0": {
+    "OpenAI/2.12.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-f0y5zOZVNhuc/gPQUHGkiljZlDUq2SddGOkGTPLHnjQC5mCiTCXq1BqxZ+xxxHU6bY0mEtFQJj1RlB2BpwD7Lw==",
-      "path": "openai/2.11.0",
-      "hashPath": "openai.2.11.0.nupkg.sha512"
+      "sha512": "sha512-rKyVV0sJPo7pn0Ya5dgRs5ggGbjvnKcYSvYV2jITKgFIfeo2XHjgyi6UqNT/OnF0YBqjsNpPdgM6QjzYczWplg==",
+      "path": "openai/2.12.0",
+      "hashPath": "openai.2.12.0.nupkg.sha512"
     },
-    "System.ClientModel/1.10.0": {
+    "System.ClientModel/1.14.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-lBEWs54F5Y5pZ9hC+8z4S/X76957ex+DPk7WecRHlbIHtrPfbRMMlOgI3iDn4Jpb3bSxvBnKaaHoD59auFjlBA==",
-      "path": "system.clientmodel/1.10.0",
-      "hashPath": "system.clientmodel.1.10.0.nupkg.sha512"
+      "sha512": "sha512-yhIJHDW3Hh5kcvhHv3ww1T8qvya06Nlwo/SR/rke4/fHXtyKiqQV/9b/VDhnVI7QUcMnpfvh4pIEFhNsTDLeKQ==",
+      "path": "system.clientmodel/1.14.0",
+      "hashPath": "system.clientmodel.1.14.0.nupkg.sha512"
     },
     "System.Diagnostics.DiagnosticSource/10.0.3": {
       "type": "package",

@@ -475,5 +475,5 @@
     }
   },
   "type": "object",
-  "SourceSegments": "C:\\Users\\Himanshu\\.nuget\\packages\\system.clientmodel\\1.10.0\\ConfigurationSchema.json;C:\\Users\\Himanshu\\.nuget\\packages\\openai\\2.10.0\\ConfigurationSchema.json"
+  "SourceSegments": "C:\\Users\\Himanshu\\.nuget\\packages\\system.clientmodel\\1.14.0\\ConfigurationSchema.json;C:\\Users\\Himanshu\\.nuget\\packages\\openai\\2.12.0\\ConfigurationSchema.json"
 }

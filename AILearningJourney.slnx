@@ -2,4 +2,5 @@
   <Project Path="AIApp1Chat/AIApp1Chat.csproj" />
   <Project Path="AIApp2Streaming/AIApp2Streaming.csproj" />
   <Project Path="AIApp3SemanticKernel/AIApp3SemanticKernel.csproj" />
+  <Project Path="AIApp4RAG/AIApp4RAG.csproj" />
 </Solution>

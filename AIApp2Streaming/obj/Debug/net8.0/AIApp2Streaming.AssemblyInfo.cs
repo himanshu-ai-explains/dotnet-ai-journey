@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AIApp2Streaming")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fb6ac3492b05f15fe37b0113d3822efcdbf4bda7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+392a9515384022f4dd394c50c8e2213dd217eecd")]
 [assembly: System.Reflection.AssemblyProductAttribute("AIApp2Streaming")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AIApp2Streaming")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
