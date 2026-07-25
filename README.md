@@ -30,7 +30,8 @@ using .NET, Semantic Kernel, and Azure OpenAI.
 
 ## Live Demos
 
-- App 3: [Live API](https://aiapp3-himanshu-h8e3c0bfhbbjfbhr.centralindia-01.azurewebsites.net/swagger)
+- Semantic chat: [Live API](https://aiapp3-himanshu-h8e3c0bfhbbjfbhr.centralindia-01.azurewebsites.net/swagger)\
+- RAG:  [Live API](https://aiapp4rag-himanshu-hnggcnckgkepecce.centralindia-01.azurewebsites.net/swagger)\
 
 ---
 
