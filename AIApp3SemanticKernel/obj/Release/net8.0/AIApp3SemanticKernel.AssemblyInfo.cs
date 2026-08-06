@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AIApp3SemanticKernel")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b9ce1f4c3170cef9a73eadaa231f495abc145780")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+72949de5b71cb401a2ed10b70c6749d33dbd955d")]
 [assembly: System.Reflection.AssemblyProductAttribute("AIApp3SemanticKernel")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AIApp3SemanticKernel")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

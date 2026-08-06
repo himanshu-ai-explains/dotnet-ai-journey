@@ -3,44 +3,20 @@
   "WorkspaceRootPath": "E:\\projects\\AI\\.NetAI\\repo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F77B711D-BB98-DB5A-0739-8603E6FFD708}|AIApp5Agent\\AIApp5Agent.csproj|e:\\projects\\ai\\.netai\\repo\\aiapp5agent\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F77B711D-BB98-DB5A-0739-8603E6FFD708}|AIApp5Agent\\AIApp5Agent.csproj|solutionrelative:aiapp5agent\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0427B28B-7F79-59E3-56FE-E26F9F87CDE7}|AIApp6MultiModal\\AIApp6MultiModal.csproj|e:\\projects\\ai\\.netai\\repo\\aiapp6multimodal\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0427B28B-7F79-59E3-56FE-E26F9F87CDE7}|AIApp6MultiModal\\AIApp6MultiModal.csproj|solutionrelative:aiapp6multimodal\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F77B711D-BB98-DB5A-0739-8603E6FFD708}|AIApp5Agent\\AIApp5Agent.csproj|e:\\projects\\ai\\.netai\\repo\\aiapp5agent\\plugins\\mathplugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F77B711D-BB98-DB5A-0739-8603E6FFD708}|AIApp5Agent\\AIApp5Agent.csproj|solutionrelative:aiapp5agent\\plugins\\mathplugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0427B28B-7F79-59E3-56FE-E26F9F87CDE7}|AIApp6MultiModal\\AIApp6MultiModal.csproj|e:\\projects\\ai\\.netai\\repo\\aiapp6multimodal\\services\\visionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0427B28B-7F79-59E3-56FE-E26F9F87CDE7}|AIApp6MultiModal\\AIApp6MultiModal.csproj|solutionrelative:aiapp6multimodal\\services\\visionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F77B711D-BB98-DB5A-0739-8603E6FFD708}|AIApp5Agent\\AIApp5Agent.csproj|e:\\projects\\ai\\.netai\\repo\\aiapp5agent\\aiapp5agent.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{F77B711D-BB98-DB5A-0739-8603E6FFD708}|AIApp5Agent\\AIApp5Agent.csproj|solutionrelative:aiapp5agent\\aiapp5agent.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{0427B28B-7F79-59E3-56FE-E26F9F87CDE7}|AIApp6MultiModal\\AIApp6MultiModal.csproj|e:\\projects\\ai\\.netai\\repo\\aiapp6multimodal\\aiapp6multimodal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{0427B28B-7F79-59E3-56FE-E26F9F87CDE7}|AIApp6MultiModal\\AIApp6MultiModal.csproj|solutionrelative:aiapp6multimodal\\aiapp6multimodal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F77B711D-BB98-DB5A-0739-8603E6FFD708}|AIApp5Agent\\AIApp5Agent.csproj|e:\\projects\\ai\\.netai\\repo\\aiapp5agent\\controllers\\agentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F77B711D-BB98-DB5A-0739-8603E6FFD708}|AIApp5Agent\\AIApp5Agent.csproj|solutionrelative:aiapp5agent\\controllers\\agentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F77B711D-BB98-DB5A-0739-8603E6FFD708}|AIApp5Agent\\AIApp5Agent.csproj|e:\\projects\\ai\\.netai\\repo\\aiapp5agent\\filters\\tooltrackingfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F77B711D-BB98-DB5A-0739-8603E6FFD708}|AIApp5Agent\\AIApp5Agent.csproj|solutionrelative:aiapp5agent\\filters\\tooltrackingfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F77B711D-BB98-DB5A-0739-8603E6FFD708}|AIApp5Agent\\AIApp5Agent.csproj|e:\\projects\\ai\\.netai\\repo\\aiapp5agent\\services\\agentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F77B711D-BB98-DB5A-0739-8603E6FFD708}|AIApp5Agent\\AIApp5Agent.csproj|solutionrelative:aiapp5agent\\services\\agentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F77B711D-BB98-DB5A-0739-8603E6FFD708}|AIApp5Agent\\AIApp5Agent.csproj|e:\\projects\\ai\\.netai\\repo\\aiapp5agent\\plugins\\indiainfoplugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F77B711D-BB98-DB5A-0739-8603E6FFD708}|AIApp5Agent\\AIApp5Agent.csproj|solutionrelative:aiapp5agent\\plugins\\indiainfoplugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F77B711D-BB98-DB5A-0739-8603E6FFD708}|AIApp5Agent\\AIApp5Agent.csproj|e:\\projects\\ai\\.netai\\repo\\aiapp5agent\\plugins\\taskplugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F77B711D-BB98-DB5A-0739-8603E6FFD708}|AIApp5Agent\\AIApp5Agent.csproj|solutionrelative:aiapp5agent\\plugins\\taskplugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F77B711D-BB98-DB5A-0739-8603E6FFD708}|AIApp5Agent\\AIApp5Agent.csproj|e:\\projects\\ai\\.netai\\repo\\aiapp5agent\\plugins\\datetimeplugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F77B711D-BB98-DB5A-0739-8603E6FFD708}|AIApp5Agent\\AIApp5Agent.csproj|solutionrelative:aiapp5agent\\plugins\\datetimeplugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F77B711D-BB98-DB5A-0739-8603E6FFD708}|AIApp5Agent\\AIApp5Agent.csproj|e:\\projects\\ai\\.netai\\repo\\aiapp5agent\\models\\agentrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F77B711D-BB98-DB5A-0739-8603E6FFD708}|AIApp5Agent\\AIApp5Agent.csproj|solutionrelative:aiapp5agent\\models\\agentrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0427B28B-7F79-59E3-56FE-E26F9F87CDE7}|AIApp6MultiModal\\AIApp6MultiModal.csproj|e:\\projects\\ai\\.netai\\repo\\aiapp6multimodal\\models\\visionmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0427B28B-7F79-59E3-56FE-E26F9F87CDE7}|AIApp6MultiModal\\AIApp6MultiModal.csproj|solutionrelative:aiapp6multimodal\\models\\visionmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -56,129 +32,52 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "E:\\projects\\AI\\.NetAI\\repo\\AIApp5Agent\\Program.cs",
-              "RelativeDocumentMoniker": "AIApp5Agent\\Program.cs",
-              "ToolTip": "E:\\projects\\AI\\.NetAI\\repo\\AIApp5Agent\\Program.cs",
-              "RelativeToolTip": "AIApp5Agent\\Program.cs",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAAAFQAAAAWAAAAAAAAAA==",
+              "DocumentMoniker": "E:\\projects\\AI\\.NetAI\\repo\\AIApp6MultiModal\\Program.cs",
+              "RelativeDocumentMoniker": "AIApp6MultiModal\\Program.cs",
+              "ToolTip": "E:\\projects\\AI\\.NetAI\\repo\\AIApp6MultiModal\\Program.cs",
+              "RelativeToolTip": "AIApp6MultiModal\\Program.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAA8AAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-29T12:05:07.025Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AgentController.cs",
-              "DocumentMoniker": "E:\\projects\\AI\\.NetAI\\repo\\AIApp5Agent\\Controllers\\AgentController.cs",
-              "RelativeDocumentMoniker": "AIApp5Agent\\Controllers\\AgentController.cs",
-              "ToolTip": "E:\\projects\\AI\\.NetAI\\repo\\AIApp5Agent\\Controllers\\AgentController.cs",
-              "RelativeToolTip": "AIApp5Agent\\Controllers\\AgentController.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAAAE4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-29T12:04:31.598Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ToolTrackingFilter.cs",
-              "DocumentMoniker": "E:\\projects\\AI\\.NetAI\\repo\\AIApp5Agent\\Filters\\ToolTrackingFilter.cs",
-              "RelativeDocumentMoniker": "AIApp5Agent\\Filters\\ToolTrackingFilter.cs",
-              "ToolTip": "E:\\projects\\AI\\.NetAI\\repo\\AIApp5Agent\\Filters\\ToolTrackingFilter.cs",
-              "RelativeToolTip": "AIApp5Agent\\Filters\\ToolTrackingFilter.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAAABEAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-29T12:02:36.081Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AgentService.cs",
-              "DocumentMoniker": "E:\\projects\\AI\\.NetAI\\repo\\AIApp5Agent\\Services\\AgentService.cs",
-              "RelativeDocumentMoniker": "AIApp5Agent\\Services\\AgentService.cs",
-              "ToolTip": "E:\\projects\\AI\\.NetAI\\repo\\AIApp5Agent\\Services\\AgentService.cs",
-              "RelativeToolTip": "AIApp5Agent\\Services\\AgentService.cs",
-              "ViewState": "AgIAAFgAAAAAAAAAAAAAAE4AAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-29T12:01:52.351Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IndiaInfoPlugin.cs",
-              "DocumentMoniker": "E:\\projects\\AI\\.NetAI\\repo\\AIApp5Agent\\Plugins\\IndiaInfoPlugin.cs",
-              "RelativeDocumentMoniker": "AIApp5Agent\\Plugins\\IndiaInfoPlugin.cs",
-              "ToolTip": "E:\\projects\\AI\\.NetAI\\repo\\AIApp5Agent\\Plugins\\IndiaInfoPlugin.cs",
-              "RelativeToolTip": "AIApp5Agent\\Plugins\\IndiaInfoPlugin.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAwwFQAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-29T11:59:36.372Z",
+              "WhenOpened": "2026-08-06T02:10:45.866Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "AIApp5Agent.csproj",
-              "DocumentMoniker": "E:\\projects\\AI\\.NetAI\\repo\\AIApp5Agent\\AIApp5Agent.csproj",
-              "RelativeDocumentMoniker": "AIApp5Agent\\AIApp5Agent.csproj",
-              "ToolTip": "E:\\projects\\AI\\.NetAI\\repo\\AIApp5Agent\\AIApp5Agent.csproj",
-              "RelativeToolTip": "AIApp5Agent\\AIApp5Agent.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABQAAAAAAAAAA==",
+              "Title": "AIApp6MultiModal",
+              "DocumentMoniker": "E:\\projects\\AI\\.NetAI\\repo\\AIApp6MultiModal\\AIApp6MultiModal.csproj",
+              "RelativeDocumentMoniker": "AIApp6MultiModal\\AIApp6MultiModal.csproj",
+              "ToolTip": "E:\\projects\\AI\\.NetAI\\repo\\AIApp6MultiModal\\AIApp6MultiModal.csproj",
+              "RelativeToolTip": "AIApp6MultiModal\\AIApp6MultiModal.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-07-28T09:48:47.214Z",
+              "WhenOpened": "2026-08-06T02:10:22.581Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "MathPlugin.cs",
-              "DocumentMoniker": "E:\\projects\\AI\\.NetAI\\repo\\AIApp5Agent\\Plugins\\MathPlugin.cs",
-              "RelativeDocumentMoniker": "AIApp5Agent\\Plugins\\MathPlugin.cs",
-              "ToolTip": "E:\\projects\\AI\\.NetAI\\repo\\AIApp5Agent\\Plugins\\MathPlugin.cs",
-              "RelativeToolTip": "AIApp5Agent\\Plugins\\MathPlugin.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAARAAAAAAAAAA==",
+              "Title": "VisionService.cs",
+              "DocumentMoniker": "E:\\projects\\AI\\.NetAI\\repo\\AIApp6MultiModal\\Services\\VisionService.cs",
+              "RelativeDocumentMoniker": "AIApp6MultiModal\\Services\\VisionService.cs",
+              "ToolTip": "E:\\projects\\AI\\.NetAI\\repo\\AIApp6MultiModal\\Services\\VisionService.cs",
+              "RelativeToolTip": "AIApp6MultiModal\\Services\\VisionService.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAADgvzcAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-28T09:35:26.403Z",
+              "WhenOpened": "2026-08-04T12:19:10.855Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "TaskPlugin.cs",
-              "DocumentMoniker": "E:\\projects\\AI\\.NetAI\\repo\\AIApp5Agent\\Plugins\\TaskPlugin.cs",
-              "RelativeDocumentMoniker": "AIApp5Agent\\Plugins\\TaskPlugin.cs",
-              "ToolTip": "E:\\projects\\AI\\.NetAI\\repo\\AIApp5Agent\\Plugins\\TaskPlugin.cs",
-              "RelativeToolTip": "AIApp5Agent\\Plugins\\TaskPlugin.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAswF8AAAAMAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "VisionModels.cs",
+              "DocumentMoniker": "E:\\projects\\AI\\.NetAI\\repo\\AIApp6MultiModal\\Models\\VisionModels.cs",
+              "RelativeDocumentMoniker": "AIApp6MultiModal\\Models\\VisionModels.cs",
+              "ToolTip": "E:\\projects\\AI\\.NetAI\\repo\\AIApp6MultiModal\\Models\\VisionModels.cs",
+              "RelativeToolTip": "AIApp6MultiModal\\Models\\VisionModels.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAmwCkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-29T10:16:18.418Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "DateTimePlugin.cs",
-              "DocumentMoniker": "E:\\projects\\AI\\.NetAI\\repo\\AIApp5Agent\\Plugins\\DateTimePlugin.cs",
-              "RelativeDocumentMoniker": "AIApp5Agent\\Plugins\\DateTimePlugin.cs",
-              "ToolTip": "E:\\projects\\AI\\.NetAI\\repo\\AIApp5Agent\\Plugins\\DateTimePlugin.cs",
-              "RelativeToolTip": "AIApp5Agent\\Plugins\\DateTimePlugin.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBAAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-27T16:28:38.693Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AgentRequest.cs",
-              "DocumentMoniker": "E:\\projects\\AI\\.NetAI\\repo\\AIApp5Agent\\Models\\AgentRequest.cs",
-              "RelativeDocumentMoniker": "AIApp5Agent\\Models\\AgentRequest.cs",
-              "ToolTip": "E:\\projects\\AI\\.NetAI\\repo\\AIApp5Agent\\Models\\AgentRequest.cs",
-              "RelativeToolTip": "AIApp5Agent\\Models\\AgentRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-27T16:24:24.709Z"
+              "WhenOpened": "2026-08-04T12:10:29.022Z"
             }
           ]
         }

@@ -75,3 +75,4 @@ E:\projects\AI\.NetAI\repo\AIApp3SemanticKernel\obj\Release\net8.0\refint\AIApp3
 E:\projects\AI\.NetAI\repo\AIApp3SemanticKernel\obj\Release\net8.0\AIApp3SemanticKernel.pdb
 E:\projects\AI\.NetAI\repo\AIApp3SemanticKernel\obj\Release\net8.0\AIApp3SemanticKernel.genruntimeconfig.cache
 E:\projects\AI\.NetAI\repo\AIApp3SemanticKernel\obj\Release\net8.0\ref\AIApp3SemanticKernel.dll
+E:\projects\AI\.NetAI\repo\AIApp3SemanticKernel\obj\Release\net8.0\swae.build.ex.cache

@@ -1,0 +1,6 @@
+@AIApp6MultiModal_HostAddress = http://localhost:5128
+
+GET {{AIApp6MultiModal_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

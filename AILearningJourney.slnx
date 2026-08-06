@@ -4,4 +4,5 @@
   <Project Path="AIApp3SemanticKernel/AIApp3SemanticKernel.csproj" />
   <Project Path="AIApp4RAG/AIApp4RAG.csproj" />
   <Project Path="AIApp5Agent/AIApp5Agent.csproj" />
+  <Project Path="AIApp6MultiModal/AIApp6MultiModal.csproj" />
 </Solution>
