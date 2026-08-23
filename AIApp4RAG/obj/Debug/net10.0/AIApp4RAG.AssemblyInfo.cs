@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AIApp4RAG")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+72949de5b71cb401a2ed10b70c6749d33dbd955d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+58cb4910878df9d255c26a46a203eb684074ef85")]
 [assembly: System.Reflection.AssemblyProductAttribute("AIApp4RAG")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AIApp4RAG")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -9,7 +9,7 @@
       "AIApp2Streaming/1.0.0": {
         "dependencies": {
           "Microsoft.Extensions.Configuration.UserSecrets": "10.0.8",
-          "OpenAI": "2.12.0"
+          "OpenAI": "2.13.0"
         },
         "runtime": {
           "AIApp2Streaming.dll": {}
@@ -182,15 +182,15 @@
           }
         }
       },
-      "OpenAI/2.12.0": {
+      "OpenAI/2.13.0": {
         "dependencies": {
           "System.ClientModel": "1.14.0",
           "System.Net.ServerSentEvents": "10.0.2"
         },
         "runtime": {
           "lib/net8.0/OpenAI.dll": {
-            "assemblyVersion": "2.12.0.0",
-            "fileVersion": "2.12.0.0"
+            "assemblyVersion": "2.13.0.0",
+            "fileVersion": "2.13.0.0"
           }
         }
       },
@@ -379,12 +379,12 @@
       "path": "microsoft.extensions.primitives/10.0.8",
       "hashPath": "microsoft.extensions.primitives.10.0.8.nupkg.sha512"
     },
-    "OpenAI/2.12.0": {
+    "OpenAI/2.13.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-rKyVV0sJPo7pn0Ya5dgRs5ggGbjvnKcYSvYV2jITKgFIfeo2XHjgyi6UqNT/OnF0YBqjsNpPdgM6QjzYczWplg==",
-      "path": "openai/2.12.0",
-      "hashPath": "openai.2.12.0.nupkg.sha512"
+      "sha512": "sha512-fKgWod3UNE+wPkJuLCiWC7FKh3YSEIHa6QK9gKxCVZ4UYsV9+Gwzg4cEDnvVaIiwc00RTwEuhiOn1Rbk4nLjtw==",
+      "path": "openai/2.13.0",
+      "hashPath": "openai.2.13.0.nupkg.sha512"
     },
     "System.ClientModel/1.14.0": {
       "type": "package",

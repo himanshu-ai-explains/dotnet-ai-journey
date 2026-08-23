@@ -1385,11 +1385,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\projects\\AI\\.NetAI\\repo\\AIApp4RAG\\AIApp4RAG.csproj",
+      "projectUniqueName": "D:\\projects\\AI\\.NetAI\\repo\\AIApp4RAG\\AIApp4RAG.csproj",
       "projectName": "AIApp4RAG",
-      "projectPath": "E:\\projects\\AI\\.NetAI\\repo\\AIApp4RAG\\AIApp4RAG.csproj",
+      "projectPath": "D:\\projects\\AI\\.NetAI\\repo\\AIApp4RAG\\AIApp4RAG.csproj",
       "packagesPath": "C:\\Users\\Himanshu\\.nuget\\packages\\",
-      "outputPath": "E:\\projects\\AI\\.NetAI\\repo\\AIApp4RAG\\obj\\",
+      "outputPath": "D:\\projects\\AI\\.NetAI\\repo\\AIApp4RAG\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1423,7 +1423,7 @@
         "auditLevel": "low",
         "auditMode": "all"
       },
-      "SdkAnalysisLevel": "10.0.300"
+      "SdkAnalysisLevel": "10.0.400"
     },
     "frameworks": {
       "net10.0": {
@@ -1474,7 +1474,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.400/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.AspNetCore": "(,10.0.32767]",
           "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",

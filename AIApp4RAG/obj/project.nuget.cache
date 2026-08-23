@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mb9jom8ImYY=",
+  "dgSpecHash": "dxCJJBmTG+E=",
   "success": true,
-  "projectFilePath": "E:\\projects\\AI\\.NetAI\\repo\\AIApp4RAG\\AIApp4RAG.csproj",
+  "projectFilePath": "D:\\projects\\AI\\.NetAI\\repo\\AIApp4RAG\\AIApp4RAG.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Himanshu\\.nuget\\packages\\azure.ai.openai\\2.9.0-beta.1\\azure.ai.openai.2.9.0-beta.1.nupkg.sha512",
     "C:\\Users\\Himanshu\\.nuget\\packages\\azure.core\\1.51.1\\azure.core.1.51.1.nupkg.sha512",

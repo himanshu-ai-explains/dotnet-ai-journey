@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MMf7ctRq5rM=",
+  "dgSpecHash": "fkj6dVxlVP4=",
   "success": true,
-  "projectFilePath": "E:\\projects\\AI\\.NetAI\\repo\\AIApp5Agent\\AIApp5Agent.csproj",
+  "projectFilePath": "D:\\projects\\AI\\.NetAI\\repo\\AIApp5Agent\\AIApp5Agent.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Himanshu\\.nuget\\packages\\azure.ai.openai\\2.9.0-beta.1\\azure.ai.openai.2.9.0-beta.1.nupkg.sha512",
     "C:\\Users\\Himanshu\\.nuget\\packages\\azure.core\\1.51.1\\azure.core.1.51.1.nupkg.sha512",
@@ -37,10 +37,10 @@
     {
       "code": "NU1510",
       "level": "Warning",
-      "message": "PackageReference Microsoft.Extensions.Configuration.UserSecrets will not be pruned. Consider removing this package from your dependencies, as it is likely unnecessary.",
-      "projectPath": "E:\\projects\\AI\\.NetAI\\repo\\AIApp5Agent\\AIApp5Agent.csproj",
+      "message": "PackageReference Microsoft.Extensions.Configuration.UserSecrets will not be pruned. This package is automatically available and does not need to be referenced explicitly. Remove the PackageReference item.",
+      "projectPath": "D:\\projects\\AI\\.NetAI\\repo\\AIApp5Agent\\AIApp5Agent.csproj",
       "warningLevel": 1,
-      "filePath": "E:\\projects\\AI\\.NetAI\\repo\\AIApp5Agent\\AIApp5Agent.csproj",
+      "filePath": "D:\\projects\\AI\\.NetAI\\repo\\AIApp5Agent\\AIApp5Agent.csproj",
       "libraryId": "Microsoft.Extensions.Configuration.UserSecrets",
       "targetGraphs": [
         "net10.0"

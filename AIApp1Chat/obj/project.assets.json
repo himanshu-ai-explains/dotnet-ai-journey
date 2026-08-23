@@ -282,7 +282,7 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
-      "OpenAI/2.12.0": {
+      "OpenAI/2.13.0": {
         "type": "package",
         "dependencies": {
           "System.ClientModel": "1.14.0",
@@ -913,10 +913,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "OpenAI/2.12.0": {
-      "sha512": "rKyVV0sJPo7pn0Ya5dgRs5ggGbjvnKcYSvYV2jITKgFIfeo2XHjgyi6UqNT/OnF0YBqjsNpPdgM6QjzYczWplg==",
+    "OpenAI/2.13.0": {
+      "sha512": "fKgWod3UNE+wPkJuLCiWC7FKh3YSEIHa6QK9gKxCVZ4UYsV9+Gwzg4cEDnvVaIiwc00RTwEuhiOn1Rbk4nLjtw==",
       "type": "package",
-      "path": "openai/2.12.0",
+      "path": "openai/2.13.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -931,7 +931,7 @@
         "lib/net8.0/OpenAI.xml",
         "lib/netstandard2.0/OpenAI.dll",
         "lib/netstandard2.0/OpenAI.xml",
-        "openai.2.12.0.nupkg.sha512",
+        "openai.2.13.0.nupkg.sha512",
         "openai.nuspec"
       ]
     },
@@ -1201,11 +1201,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\projects\\AI\\.NetAI\\repo\\AIApp1Chat\\AIApp1Chat.csproj",
+      "projectUniqueName": "D:\\projects\\AI\\.NetAI\\repo\\AIApp1Chat\\AIApp1Chat.csproj",
       "projectName": "AIApp1Chat",
-      "projectPath": "E:\\projects\\AI\\.NetAI\\repo\\AIApp1Chat\\AIApp1Chat.csproj",
+      "projectPath": "D:\\projects\\AI\\.NetAI\\repo\\AIApp1Chat\\AIApp1Chat.csproj",
       "packagesPath": "C:\\Users\\Himanshu\\.nuget\\packages\\",
-      "outputPath": "E:\\projects\\AI\\.NetAI\\repo\\AIApp1Chat\\obj\\",
+      "outputPath": "D:\\projects\\AI\\.NetAI\\repo\\AIApp1Chat\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1239,7 +1239,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "10.0.300"
+      "SdkAnalysisLevel": "10.0.400"
     },
     "frameworks": {
       "net8.0": {
@@ -1271,7 +1271,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
