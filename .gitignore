@@ -1,1 +1,38 @@
+## Build results
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+[Tt]emp/
+[Tt]mp/
+publish/
+PublishOutputs.*/
+*.PublishOutputs.txt
+
+## Visual Studio
 .vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.pubxml.user
+*.docstates
+
+## Rider & JetBrains
+.idea/
+*.DotSettings.user
+
+## VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+## Secrets & Config
+secrets.json
+appsettings.Production.json
+
+## OS generated files
+.DS_Store
+Thumbs.db
