@@ -10,8 +10,23 @@ try
 
     var builder = WebApplication.CreateBuilder(args);
 
-    string apiKey = builder.Configuration["OpenAIKey"] ?? "";
-    Console.WriteLine($"Api Key : {(string.IsNullOrEmpty(apiKey) ? "Missing" : "Loaded OK")}");
+    string? apiKey = builder.Configuration["OpenAIKey"]
+        ?? builder.Configuration["OPENAI_API_KEY"]
+        ?? Environment.GetEnvironmentVariable("OPENAI_API_KEY");
+
+    if (string.IsNullOrWhiteSpace(apiKey))
+    {
+        Console.ForegroundColor = ConsoleColor.Red;
+        Console.WriteLine("=================================================================");
+        Console.WriteLine(" [ERROR] OpenAI API Key is missing!");
+        Console.WriteLine(" Please configure it using one of the following methods:");
+        Console.WriteLine("   1. User Secrets: dotnet user-secrets set \"OpenAIKey\" \"sk-...\"");
+        Console.WriteLine("   2. Environment Variable: set OPENAI_API_KEY=sk-...");
+        Console.WriteLine("   3. appsettings.json: { \"OpenAIKey\": \"sk-...\" }");
+        Console.WriteLine("=================================================================");
+        Console.ResetColor();
+        return;
+    }
 
     var kernelBuilder = Kernel.CreateBuilder();
 

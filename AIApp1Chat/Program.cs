@@ -1,11 +1,32 @@
-﻿using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Configuration;
 using OpenAI;
 using OpenAI.Chat;
 
 IConfigurationRoot config = new ConfigurationBuilder()
-    .AddUserSecrets<Program>().Build();
+    .AddUserSecrets<Program>()
+    .Build();
 
-string apiKey = config["OpenAIKey"]!;
+string? apiKey = config["OpenAIKey"]
+    ?? Environment.GetEnvironmentVariable("OPENAI_API_KEY")
+    ?? Environment.GetEnvironmentVariable("OpenAIKey");
+
+if (string.IsNullOrWhiteSpace(apiKey))
+{
+    Console.ForegroundColor = ConsoleColor.Yellow;
+    Console.WriteLine("No OpenAI API key found in User Secrets or Environment Variables.");
+    Console.WriteLine("Tip: You can persist it using: dotnet user-secrets set \"OpenAIKey\" \"sk-...\"\n");
+    Console.Write("Enter your OpenAI API Key for this session: ");
+    Console.ResetColor();
+    apiKey = Console.ReadLine()?.Trim();
+}
+
+if (string.IsNullOrWhiteSpace(apiKey))
+{
+    Console.ForegroundColor = ConsoleColor.Red;
+    Console.WriteLine("\n[Error] An OpenAI API Key is required to run the chat application.");
+    Console.ResetColor();
+    return;
+}
 
 ChatClient chatClient = new OpenAIClient(apiKey)
     .GetChatClient("gpt-4o-mini");
