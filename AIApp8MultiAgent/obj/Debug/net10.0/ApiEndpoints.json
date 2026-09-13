@@ -1,0 +1,28 @@
+[
+  {
+    "ContainingType": "AIApp8MultiAgent.Controllers.AgentController",
+    "Method": "Ask",
+    "RelativePath": "api/Agent/ask",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "AIApp8MultiAgent.Models.AgentAskRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AIApp8MultiAgent.Models.AgentSessionResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

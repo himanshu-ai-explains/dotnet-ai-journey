@@ -22,6 +22,9 @@ D:\projects\AI\.NetAI\repo\AIApp7Voice\bin\Debug\net10.0\Microsoft.SemanticKerne
 D:\projects\AI\.NetAI\repo\AIApp7Voice\bin\Debug\net10.0\Microsoft.SemanticKernel.Connectors.OpenAI.dll
 D:\projects\AI\.NetAI\repo\AIApp7Voice\bin\Debug\net10.0\Microsoft.SemanticKernel.Core.dll
 D:\projects\AI\.NetAI\repo\AIApp7Voice\bin\Debug\net10.0\OpenAI.dll
+D:\projects\AI\.NetAI\repo\AIApp7Voice\bin\Debug\net10.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\projects\AI\.NetAI\repo\AIApp7Voice\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\projects\AI\.NetAI\repo\AIApp7Voice\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 D:\projects\AI\.NetAI\repo\AIApp7Voice\bin\Debug\net10.0\System.ClientModel.dll
 D:\projects\AI\.NetAI\repo\AIApp7Voice\bin\Debug\net10.0\System.Memory.Data.dll
 D:\projects\AI\.NetAI\repo\AIApp7Voice\bin\Debug\net10.0\System.Numerics.Tensors.dll
@@ -43,13 +46,10 @@ D:\projects\AI\.NetAI\repo\AIApp7Voice\obj\Debug\net10.0\staticwebassets.build.j
 D:\projects\AI\.NetAI\repo\AIApp7Voice\obj\Debug\net10.0\staticwebassets.development.json
 D:\projects\AI\.NetAI\repo\AIApp7Voice\obj\Debug\net10.0\staticwebassets.build.endpoints.json
 D:\projects\AI\.NetAI\repo\AIApp7Voice\obj\Debug\net10.0\swae.build.ex.cache
-D:\projects\AI\.NetAI\repo\AIApp7Voice\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
 D:\projects\AI\.NetAI\repo\AIApp7Voice\obj\Debug\net10.0\AIApp7Vo.AC647088.Up2Date
 D:\projects\AI\.NetAI\repo\AIApp7Voice\obj\Debug\net10.0\AIApp7Voice.dll
 D:\projects\AI\.NetAI\repo\AIApp7Voice\obj\Debug\net10.0\refint\AIApp7Voice.dll
 D:\projects\AI\.NetAI\repo\AIApp7Voice\obj\Debug\net10.0\AIApp7Voice.pdb
 D:\projects\AI\.NetAI\repo\AIApp7Voice\obj\Debug\net10.0\AIApp7Voice.genruntimeconfig.cache
 D:\projects\AI\.NetAI\repo\AIApp7Voice\obj\Debug\net10.0\ref\AIApp7Voice.dll
-D:\projects\AI\.NetAI\repo\AIApp7Voice\bin\Debug\net10.0\Swashbuckle.AspNetCore.Swagger.dll
-D:\projects\AI\.NetAI\repo\AIApp7Voice\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-D:\projects\AI\.NetAI\repo\AIApp7Voice\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\projects\AI\.NetAI\repo\AIApp7Voice\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt

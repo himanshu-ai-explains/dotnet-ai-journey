@@ -107,10 +107,10 @@ D:\projects\AI\.NetAI\repo\AIApp5Agent\obj\Debug\net10.0\staticwebassets.build.j
 D:\projects\AI\.NetAI\repo\AIApp5Agent\obj\Debug\net10.0\staticwebassets.development.json
 D:\projects\AI\.NetAI\repo\AIApp5Agent\obj\Debug\net10.0\staticwebassets.build.endpoints.json
 D:\projects\AI\.NetAI\repo\AIApp5Agent\obj\Debug\net10.0\swae.build.ex.cache
-D:\projects\AI\.NetAI\repo\AIApp5Agent\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
 D:\projects\AI\.NetAI\repo\AIApp5Agent\obj\Debug\net10.0\AIApp5Ag.10F1ED68.Up2Date
 D:\projects\AI\.NetAI\repo\AIApp5Agent\obj\Debug\net10.0\AIApp5Agent.dll
 D:\projects\AI\.NetAI\repo\AIApp5Agent\obj\Debug\net10.0\refint\AIApp5Agent.dll
 D:\projects\AI\.NetAI\repo\AIApp5Agent\obj\Debug\net10.0\AIApp5Agent.pdb
 D:\projects\AI\.NetAI\repo\AIApp5Agent\obj\Debug\net10.0\AIApp5Agent.genruntimeconfig.cache
 D:\projects\AI\.NetAI\repo\AIApp5Agent\obj\Debug\net10.0\ref\AIApp5Agent.dll
+D:\projects\AI\.NetAI\repo\AIApp5Agent\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt

@@ -101,10 +101,10 @@ D:\projects\AI\.NetAI\repo\AIApp6MultiModal\obj\Debug\net10.0\staticwebassets.bu
 D:\projects\AI\.NetAI\repo\AIApp6MultiModal\obj\Debug\net10.0\staticwebassets.development.json
 D:\projects\AI\.NetAI\repo\AIApp6MultiModal\obj\Debug\net10.0\staticwebassets.build.endpoints.json
 D:\projects\AI\.NetAI\repo\AIApp6MultiModal\obj\Debug\net10.0\swae.build.ex.cache
-D:\projects\AI\.NetAI\repo\AIApp6MultiModal\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
 D:\projects\AI\.NetAI\repo\AIApp6MultiModal\obj\Debug\net10.0\AIApp6Mu.8FBE6773.Up2Date
 D:\projects\AI\.NetAI\repo\AIApp6MultiModal\obj\Debug\net10.0\AIApp6MultiModal.dll
 D:\projects\AI\.NetAI\repo\AIApp6MultiModal\obj\Debug\net10.0\refint\AIApp6MultiModal.dll
 D:\projects\AI\.NetAI\repo\AIApp6MultiModal\obj\Debug\net10.0\AIApp6MultiModal.pdb
 D:\projects\AI\.NetAI\repo\AIApp6MultiModal\obj\Debug\net10.0\AIApp6MultiModal.genruntimeconfig.cache
 D:\projects\AI\.NetAI\repo\AIApp6MultiModal\obj\Debug\net10.0\ref\AIApp6MultiModal.dll
+D:\projects\AI\.NetAI\repo\AIApp6MultiModal\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt

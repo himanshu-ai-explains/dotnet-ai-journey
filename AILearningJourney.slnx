@@ -6,4 +6,5 @@
   <Project Path="AIApp5Agent/AIApp5Agent.csproj" />
   <Project Path="AIApp6MultiModal/AIApp6MultiModal.csproj" />
   <Project Path="AIApp7Voice/AIApp7Voice.csproj" />
+  <Project Path="AIApp8MultiAgent/AIApp7_5MultiAgent.csproj" />
 </Solution>

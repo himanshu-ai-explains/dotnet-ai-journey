@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="aiapp7voice-himanshu" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^D:\\projects\\AI\\\.NetAI\\repo\\AIApp7Voice\\obj\\Release\\net10\.0\\PubTmp\\Out\\$" />
+  </parameter>
+</parameters>
