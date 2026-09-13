@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AIApp7Voice")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5c2437252d59f7a658e252d00459c2ea9d23dd6c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cc10843e5cdeb6ea60ef314b2e686ca6ac9ec9bd")]
 [assembly: System.Reflection.AssemblyProductAttribute("AIApp7Voice")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AIApp7Voice")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
