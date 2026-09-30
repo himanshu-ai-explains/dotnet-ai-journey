@@ -1,0 +1,18 @@
+[
+  {
+    "ContainingType": "AIApp8VoiceCompanion.Controllers.VoiceChatController",
+    "Method": "Send",
+    "RelativePath": "api/voicechat/send",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "AIApp8VoiceCompanion.Models.VoiceChatRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

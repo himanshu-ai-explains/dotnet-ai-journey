@@ -1,0 +1,2 @@
+wwwroot\voice-demo.html
+D:\projects\AI\.NetAI\repo\AIApp8VoiceCompanion\wwwroot\voice-demo.html

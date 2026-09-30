@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Voice Companion — Test</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/8.0.0/signalr.min.js"></script>
+</head>
+<body style="font-family:sans-serif; padding:40px; text-align:center;">
+
+    <h1>Mic Test</h1>
+    <button id="micBtn" style="font-size:20px; padding:14px 28px;">🎤 Hold to Talk</button>
+    <button id="resetBtn" style="font-size:14px; padding:8px 16px; margin-left:10px;">🔄 New Conversation</button>
+    <p id="status" style="color:#888;">Idle</p>
+    <p id="transcript" style="font-size:18px; min-height:40px;"></p>
+    <hr>
+    <p id="aiAnswer" style="font-size:18px; min-height:60px; text-align:left; max-width:600px; margin:0 auto;"></p>
+    <script>
+        // SpeechRecognition is the Web Speech API's built-in speech-to-text --
+        // no API call, no cost, runs entirely in Chrome itself. Chrome exposes
+        // it under a vendor-prefixed name, so we check both.
+        const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+        if (!SpeechRecognition) {
+            document.getElementById('status').textContent =
+                'Speech recognition not supported -- use Chrome or Edge.';
+        }
+      
+        const recognition = new SpeechRecognition();
+        recognition.continuous = true;
+        recognition.interimResults = true; // shows live partial text, so you can see it's still capturing
+        recognition.lang = 'en-US';
+
+        const micBtn = document.getElementById('micBtn');
+        const statusEl = document.getElementById('status');
+        const transcriptEl = document.getElementById('transcript');
+        const answerEl = document.getElementById('aiAnswer');
+        let isListening = false;
+        // One session ID for this whole page load -- every message you speak
+        // during this test belongs to the same conversation, same as the
+        // ConversationStore keying we built in Step 2.
+        let sessionId = crypto.randomUUID();
+
+        document.getElementById('resetBtn').addEventListener('click', () => {
+            sessionId = crypto.randomUUID(); // fresh key -- server creates a brand-new, empty history for it
+            transcriptEl.textContent = '';
+            answerEl.textContent = '';
+            statusEl.textContent = 'New conversation started.';
+        });
+
+
+        // Same SignalR pattern as App 7.5's hub connection, just a different
+        // hub URL and a different event name -- "ReceiveChatChunk" instead of
+        // "ReceiveAgentUpdate".
+        const connection = new signalR.HubConnectionBuilder()
+            .withUrl('/hubs/voice-chat')
+            .withAutomaticReconnect()
+            .build();
+
+        let isProcessing = false; // NEW: tracks whether a request is currently in flight
+
+        micBtn.addEventListener('click', async () => {
+            if (isProcessing) return; // NEW: ignore clicks while already processing
+
+
+            if (!isListening) {
+                isListening = true;
+
+
+                micBtn.textContent = '⏹ Stop & Send';
+                statusEl.textContent = 'Listening... click again when done.';
+
+                transcriptEl.textContent = '';
+                answerEl.textContent = '';
+
+
+
+                // isProcessing = true;
+                // micBtn.disabled = true; // NEW: visibly prevent double-presses
+                // statusEl.textContent = 'Listening...';
+                // transcriptEl.textContent = '';
+                // answerEl.textContent = '';
+
+                await connection.invoke('JoinSession', sessionId);
+                recognition.start();
+            }
+
+            else {
+                isListening = false;
+                micBtn.textContent = '🎤 Hold to Talk';
+                recognition.stop(); // triggers one final onresult with everything captured
+            }
+        });
+
+        connection.on('ReceiveChatChunk', (update) => {
+            if (update.isFinal) {
+                statusEl.textContent = 'AI finished. Hold to talk again.';
+                isProcessing = false;   // NEW: only now is it safe to talk again
+                micBtn.disabled = false; // NEW: re-enable the button
+                return;
+            }
+            // Just append each chunk as it arrives -- this is the RAW streaming
+            // behavior, before we add sentence-buffering for speech in the next
+            // step. You should see the answer visibly "typing itself out" in
+            // real time rather than appearing all at once.
+            answerEl.textContent += update.textChunk;
+        });
+
+        connection.start()
+            .then(() => console.log('SignalR connected'))
+            .catch(err => console.error('SignalR connection failed:', err));
+
+        let finalTranscript = '';
+
+        recognition.onresult = async (event) => {
+            finalTranscript = '';
+            for (let i = 0; i < event.results.length; i++) {
+                finalTranscript += event.results[i][0].transcript;
+            }
+            transcriptEl.textContent = finalTranscript; // live preview as you talk
+        };
+
+        recognition.onend = async () => {
+            if (!finalTranscript.trim()) return;
+            statusEl.textContent = 'Thinking...';
+            isProcessing = true;
+            micBtn.disabled = true;
+
+            await fetch('/api/voicechat/send', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ sessionId, userMessage: finalTranscript })
+            });
+            // Notice: we don't do anything with this fetch's response. The
+            // answer arrives entirely through the SignalR listener above --
+            // this call's only job is telling the server "here's what I said,"
+            // same division of labor as App 7.5's controller.
+        };
+
+        recognition.onerror = (event) => {
+            statusEl.textContent = 'Error: ' + event.error;
+            isProcessing = false;
+            micBtn.disabled = false;
+        };
+    </script>
+</body>
+</html>

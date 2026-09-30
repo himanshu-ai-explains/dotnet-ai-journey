@@ -1,0 +1,6 @@
+@AIApp8VoiceCompanion_HostAddress = http://localhost:5261
+
+GET {{AIApp8VoiceCompanion_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
