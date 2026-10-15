@@ -1,0 +1,239 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offline AI — Phi-3 on my laptop</title>
+    <style>
+        :root {
+            --ink: #0D0F14;
+            --surface: #13161D;
+            --surface2: #1C2030;
+            --border: rgba(255,255,255,.1);
+            --text: #E4E8F2;
+            --text2: #8A93AD;
+            --gold: #F0B429;
+            --teal: #22C5A0;
+            --coral: #F87171;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: system-ui,sans-serif;
+            background: var(--ink);
+            color: var(--text);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            padding: 32px 16px;
+        }
+
+        .card {
+            width: 100%;
+            max-width: 720px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 28px;
+        }
+
+        h1 {
+            font-size: 22px;
+            margin-bottom: 4px;
+        }
+
+        .sub {
+            color: var(--text2);
+            font-size: 14px;
+            margin-bottom: 18px;
+        }
+
+        .net {
+            display: inline-flex;
+            gap: 8px;
+            align-items: center;
+            font-size: 13px;
+            padding: 4px 12px;
+            border-radius: 20px;
+            border: 1px solid var(--border);
+            margin-bottom: 18px;
+        }
+
+        .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--teal);
+        }
+
+        .net.offline {
+            border-color: var(--coral);
+        }
+
+            .net.offline .dot {
+                background: var(--coral);
+            }
+
+        .row {
+            display: flex;
+            gap: 10px;
+        }
+
+        input {
+            flex: 1;
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            color: var(--text);
+            border-radius: 8px;
+            padding: 12px 14px;
+            font-size: 15px;
+        }
+
+        button {
+            background: var(--gold);
+            color: #000;
+            border: 0;
+            border-radius: 8px;
+            padding: 12px 20px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+            button:disabled {
+                opacity: .5;
+                cursor: not-allowed;
+            }
+
+        .answer {
+            margin-top: 18px;
+            min-height: 110px;
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 16px;
+            line-height: 1.6;
+            white-space: pre-wrap;
+        }
+
+        .stats {
+            display: flex;
+            gap: 12px;
+            margin-top: 14px;
+            flex-wrap: wrap;
+        }
+
+        .stat {
+            flex: 1;
+            min-width: 140px;
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 10px 14px;
+        }
+
+            .stat b {
+                display: block;
+                font-size: 20px;
+                color: var(--gold);
+            }
+
+            .stat span {
+                font-size: 12px;
+                color: var(--text2);
+            }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Offline AI</h1>
+        <p class="sub">Phi-3-mini running on this laptop's CPU. No API, no cloud.</p>
+
+        <div class="net" id="net"><span class="dot"></span><span id="net-text">Network: online</span></div>
+
+        <div class="row">
+            <input id="q" placeholder="Ask anything…" value="What is the capital of France?">
+            <button id="ask">Ask</button>
+        </div>
+
+        <div class="answer" id="answer"></div>
+
+        <div class="stats">
+            <div class="stat"><b id="elapsed">0.0 s</b><span>Elapsed</span></div>
+            <div class="stat"><b id="first">–</b><span>First word after</span></div>
+            <div class="stat"><b id="words">0</b><span>Words so far</span></div>
+        </div>
+    </div>
+
+    <script>
+        const qEl = document.getElementById('q'), askBtn = document.getElementById('ask'),
+            ansEl = document.getElementById('answer'), elapsedEl = document.getElementById('elapsed'),
+            firstEl = document.getElementById('first'), wordsEl = document.getElementById('words'),
+            netEl = document.getElementById('net'), netText = document.getElementById('net-text');
+
+        function updateNet() {
+            const on = navigator.onLine;
+            netEl.classList.toggle('offline', !on);
+            netText.textContent = on ? 'Network: online' : 'Network: OFFLINE — still answering';
+        }
+        window.addEventListener('online', updateNet);
+        window.addEventListener('offline', updateNet);
+        updateNet();
+
+        askBtn.addEventListener('click', ask);
+        qEl.addEventListener('keydown', e => { if (e.key === 'Enter') ask(); });
+
+        async function ask() {
+            const q = qEl.value.trim();
+            if (!q) return;
+
+            askBtn.disabled = true;
+            ansEl.textContent = '';
+            firstEl.textContent = '…';
+            wordsEl.textContent = '0';
+
+            const t0 = performance.now();
+            let firstSeen = false;
+            const timer = setInterval(() => {
+                elapsedEl.textContent = ((performance.now() - t0) / 1000).toFixed(1) + ' s';
+            }, 100);
+
+            try {
+                const res = await fetch('/api/offline/ask?q=' + encodeURIComponent(q));
+                if (!res.ok) throw new Error('HTTP ' + res.status);
+
+                const reader = res.body.getReader();
+                const decoder = new TextDecoder();
+                let text = '';
+
+                while (true) {
+                    const { done, value } = await reader.read();
+                    if (done) break;
+                    text += decoder.decode(value, { stream: true });
+
+                    if (!firstSeen) {
+                        firstSeen = true;
+                        firstEl.textContent = ((performance.now() - t0) / 1000).toFixed(1) + ' s';
+                    }
+                     // tidy: the model sometimes ends with ".." — collapse to one period
+                    text = text.replace(/\.{2,}\s*$/, '.');
+                    ansEl.textContent = text;
+                    wordsEl.textContent = text.trim().split(/\s+/).length;
+                     
+               
+                }
+            } catch (e) {
+                ansEl.textContent = 'Error: ' + e.message;
+            } finally {
+                clearInterval(timer);
+                elapsedEl.textContent = ((performance.now() - t0) / 1000).toFixed(1) + ' s';
+                askBtn.disabled = false;
+            }
+        }
+    </script>
+</body>
+</html>
