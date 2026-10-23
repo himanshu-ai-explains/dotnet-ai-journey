@@ -1,4 +1,4 @@
-﻿using AIApp7Voice.Models;
+using AIApp7Voice.Models;
 using Microsoft.Extensions.AI;
 using Microsoft.SemanticKernel.ChatCompletion;
 using OpenAI;
@@ -13,17 +13,13 @@ namespace AIApp7Voice.Services
         private readonly AudioClient _ttsClient;
         private readonly ILogger<VoiceService> _logger;
 
-        public VoiceService(IChatCompletionService chatService, IConfiguration configuration, ILogger<VoiceService> logger)
+        public VoiceService(IChatCompletionService chatService, OpenAIClient openAiClient, ILogger<VoiceService> logger)
         {
             _chatService = chatService;
             _logger = logger;
 
-
-            string apiKey = configuration["OpenAIKey"]!;
-
-            _whisperClient = new OpenAIClient(apiKey).GetAudioClient("whisper-1");
-            _ttsClient = new OpenAIClient(apiKey).GetAudioClient("tts-1");
-
+            _whisperClient = openAiClient.GetAudioClient("whisper-1");
+            _ttsClient = openAiClient.GetAudioClient("tts-1");
         }
 
         public async Task<TranscribeResult> TranscribeAsync(IFormFile audioFile)
@@ -72,7 +68,8 @@ namespace AIApp7Voice.Services
                 "fable" => GeneratedSpeechVoice.Fable,
                 "onyx" => GeneratedSpeechVoice.Onyx,
                 "nova" => GeneratedSpeechVoice.Nova,
-                "shimmer" => GeneratedSpeechVoice.Shimmer
+                "shimmer" => GeneratedSpeechVoice.Shimmer,
+                _ => GeneratedSpeechVoice.Alloy
             };
 
             var options = new SpeechGenerationOptions
