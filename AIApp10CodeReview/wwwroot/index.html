@@ -1,0 +1,258 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI Code Review Bot</title>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --fg: #1a1a1a;
+            --muted: #666;
+            --card: #f6f7f9;
+            --border: #d9dce1;
+            --accent: #2563eb;
+            --crit: #b91c1c;
+            --warn: #b45309;
+            --info: #1d4ed8;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #0f1115;
+                --fg: #e8e8e8;
+                --muted: #9aa0a6;
+                --card: #181b21;
+                --border: #2a2e36;
+                --accent: #60a5fa;
+                --crit: #f87171;
+                --warn: #fbbf24;
+                --info: #93c5fd;
+            }
+        }
+
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+            background: var(--bg);
+            color: var(--fg);
+            line-height: 1.5;
+        }
+
+        main {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 24px 16px 48px;
+        }
+
+        h1 {
+            font-size: 1.6rem;
+            margin: 0 0 4px;
+        }
+
+        .sub {
+            color: var(--muted);
+            margin: 0 0 20px;
+        }
+
+        form {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        input[type=url] {
+            flex: 1 1 320px;
+            padding: 10px;
+            font-size: 1rem;
+            color: var(--fg);
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+        }
+
+        button {
+            padding: 10px 16px;
+            font-size: 1rem;
+            border-radius: 6px;
+            cursor: pointer;
+            border: 1px solid var(--accent);
+            background: var(--accent);
+            color: #fff;
+        }
+
+            button.secondary {
+                background: transparent;
+                color: var(--accent);
+            }
+
+            button:disabled {
+                opacity: .6;
+                cursor: wait;
+            }
+
+        #status {
+            margin: 16px 0;
+            min-height: 1.5em;
+            color: var(--muted);
+        }
+
+            #status.error {
+                color: var(--crit);
+            }
+
+        .finding {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 12px 14px;
+            margin: 12px 0;
+        }
+
+        .head {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 6px;
+        }
+
+        .badge {
+            font-size: .75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 2px 8px;
+            border-radius: 999px;
+            border: 1px solid currentColor;
+        }
+
+        .Critical {
+            color: var(--crit);
+        }
+
+        .Warning {
+            color: var(--warn);
+        }
+
+        .Info {
+            color: var(--info);
+        }
+
+        .loc {
+            font-family: ui-monospace, Consolas, monospace;
+            font-size: .85rem;
+            color: var(--muted);
+            overflow-wrap: anywhere;
+        }
+
+        .suggest {
+            margin-top: 8px;
+            padding-left: 10px;
+            border-left: 3px solid var(--border);
+            color: var(--muted);
+        }
+
+        .note {
+            color: var(--muted);
+            font-size: .85rem;
+            margin-top: 28px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>AI Code Review Bot</h1>
+        <p class="sub">
+            Paste a public GitHub pull request URL. The bot reads the diff, finds likely bugs,
+            security issues and missing tests, and a second, stronger model double-checks each finding.
+        </p>
+
+        <form id="form">
+            <input type="url" id="url" required
+                   placeholder="https://github.com/owner/repo/pull/123" aria-label="Pull request URL">
+            <button type="submit" id="go">Review</button>
+            <button type="button" id="sample" class="secondary">Try a sample</button>
+        </form>
+
+        <div id="status" role="status" aria-live="polite"></div>
+        <div id="results"></div>
+
+        <p class="note">
+            Free demo: 3 reviews per hour per visitor. Public repositories only. The pull
+            request's code is sent to OpenAI for analysis. This is an AI reviewer and can be wrong,
+            so treat its findings as suggestions to check, not verdicts.
+        </p>
+    </main>
+
+    <script>
+  const form = document.getElementById('form');
+  const urlBox = document.getElementById('url');
+  const goBtn = document.getElementById('go');
+  const sampleBtn = document.getElementById('sample');
+  const statusEl = document.getElementById('status');
+  const resultsEl = document.getElementById('results');
+
+  const SAMPLE_URL = 'https://github.com/himanshu-ai-explains/dotnet-ai-journey/pull/3';
+
+  // Build elements with textContent, never innerHTML. The findings are text that an AI
+  // wrote about untrusted code, so they must never be interpreted as HTML.
+  function el(tag, cls, text) {
+    const e = document.createElement(tag);
+    if (cls) e.className = cls;
+    if (text !== undefined) e.textContent = text;
+    return e;
+  }
+
+  function setStatus(text, isError) {
+    statusEl.textContent = text;
+    statusEl.className = isError ? 'error' : '';
+  }
+
+  function render(r) {
+    resultsEl.replaceChildren();
+    for (const f of r.findings) {
+      const card = el('div', 'finding');
+      const head = el('div', 'head');
+      head.append(el('span', 'badge ' + f.severity, f.severity),
+                  el('strong', '', f.category),
+                  el('span', 'loc', f.file + ':' + f.line));
+      card.append(head, el('div', '', f.message));
+      if (f.suggestion) card.append(el('div', 'suggest', 'Suggestion: ' + f.suggestion));
+      resultsEl.append(card);
+    }
+      const plural = (n, one, many) => n + ' ' + (n === 1 ? one : many);
+      const count = r.findings.length;
+      const headline = count === 0 ? 'No issues found.' : plural(count, 'issue', 'issues') + ' found.';
+      setStatus(headline + ' Reviewed ' + plural(r.filesReviewed, 'file', 'files') +
+          ' in ' + plural(r.chunksReviewed, 'pass', 'passes') + '. ' +
+          plural(r.candidatesRejected, 'possible issue was', 'possible issues were') +
+          ' filtered out as likely false alarms.', false);
+  }
+
+  async function review(url) {
+    resultsEl.replaceChildren();
+    goBtn.disabled = sampleBtn.disabled = true;
+    setStatus('Reviewing... this can take up to 30 seconds.', false);
+    try {
+      const res = await fetch('/api/review', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ pullRequestUrl: url })
+      });
+      let data = null;
+      try { data = await res.json(); } catch { /* body was not JSON */ }
+
+      if (res.ok) render(data);
+      else setStatus((data && (data.detail || data.title)) || ('Request failed (' + res.status + ').'), true);
+    } catch {
+      setStatus('Could not reach the server. Please try again.', true);
+    } finally {
+      goBtn.disabled = sampleBtn.disabled = false;
+    }
+  }
+
+  form.addEventListener('submit', e => { e.preventDefault(); review(urlBox.value.trim()); });
+  sampleBtn.addEventListener('click', () => { urlBox.value = SAMPLE_URL; review(SAMPLE_URL); });
+    </script>
+</body>
+</html>
