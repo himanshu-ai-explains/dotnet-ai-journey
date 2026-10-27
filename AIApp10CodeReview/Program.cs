@@ -63,7 +63,7 @@ builder.Services.AddRateLimiter(options =>
             partitionKey: "all-visitors",
             factory: _ => new FixedWindowRateLimiterOptions
             {
-                PermitLimit = 30,
+                PermitLimit = 60,
                 Window = TimeSpan.FromDays(1),
                 QueueLimit = 0
             });
@@ -91,6 +91,14 @@ builder.Services.Configure<ForwardedHeadersOptions>(options =>
     options.KnownProxies.Clear();
 });
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("portfolio", policy => policy
+        .WithOrigins("https://himanshu-ai-explains.github.io")
+        .WithMethods("POST")
+        .WithHeaders("Content-Type"));
+});
+
 var app = builder.Build();
 
 app.UseForwardedHeaders();   // must come before the rate limiter
@@ -105,6 +113,8 @@ app.UseHttpsRedirection();
 
 app.UseDefaultFiles();   // serves wwwroot/index.html at "/"
 app.UseStaticFiles();
+
+app.UseCors("portfolio");
 
 app.UseRateLimiter();
 
